@@ -22,6 +22,7 @@ The --prune option removes any packages that are not listed in the environment.y
 
 
 ## Dataset
+Hand Gesture of the Colombian sign language
 
 ### Option 1: download the processed data
 
