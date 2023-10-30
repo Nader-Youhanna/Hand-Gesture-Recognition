@@ -53,5 +53,25 @@ We detect each hand's orientation and orient all images in the same direction
 We perform edge detection
 ![edge detected](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/64aaecc7-ae7d-4079-9e73-f506ba9191c9)
 
+## Feature Extraction
+We use:
+- Hog Features
+- RI HOG Features
+- LBP Features
+- SIFT Features
+- DAISY Features
+- Fourrier Descriptor Features
+- ORB Features
+- Hu moments Features
+- Convex Hull Features
+- Elliptical fourrier descriptor features
+
+We found DAISY features to give the best results
+We then perform PCA to reduce the feature's dimensionality
+
 ## Model Training
+We use a small Neural Network with 2 layers
+We use ReLU activation functions, categorical cross entropy loss function and adam optimizer
+
 ## Model Evaluation
+Accuracy: 79.6%
