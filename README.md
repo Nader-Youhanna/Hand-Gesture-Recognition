@@ -38,19 +38,20 @@ However you would need to have gdown library installed. (included in requirement
 
 ## Data Preparation
 # 1. Data Visualization
-![normal](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/0ef6f494-339e-41f5-b854-927f9a6ac47e)
+![normal](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/d8abcb72-a9df-405c-8150-328c2388e527)
+
 
 # 2. Illumination Processing
 We perform illumination processing in order to remove shadows and segment the hand and the background
-![illuminated](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/f72eb6c3-3b28-4771-83fd-875dc95bd12c)
+![illuminated](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/d619d84f-d055-4d87-a9b7-d7f45b9aa3ff)
 
 # 3. Alignment of images
 We detect each hand's orientation and orient all images in the same direction
-![aligned](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/7a58bced-099d-4d7b-97ea-34f7e0187e24)
+![aligned](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/4a273fc2-8ece-461d-b826-6f071eb4476b)
 
 # 4. Edge Detection
 We perform edge detection
-![edge detected](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/f6708371-03e4-4769-ae5a-c76428d32049)
+![edge_detected](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/532f16ce-5f50-421c-90c7-f78f0527b7a8)
 
 ## Feature Extraction
 We use:
