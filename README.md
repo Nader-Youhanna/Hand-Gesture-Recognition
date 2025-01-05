@@ -45,8 +45,19 @@ However you would need to have gdown library installed. (included in requirement
 We perform illumination processing in order to remove shadows and segment the hand and the background
 ![illuminated](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/d619d84f-d055-4d87-a9b7-d7f45b9aa3ff)
 
+For this we implement the [Multi-Scale Retinex Algorithm](https://www.ipol.im/pub/art/2014/107/article_lr.pdf) to enhance brightness, contrast and illumination. The retinex algorithmis crucial in our problem in order to remove the shadows.
+
+The Multi-Scale Retinex Algorithm consists in computing at multiple scales:
+
+1. **The Log Illumination**, which represents the lighting or shading in the image at each scale
+2. **The Contrast**, using the Laplacian at each scale
+3. **The Reflectance:**, which represents the inherent colors and properties of the image at each scale
+
+The algorithm decomposes the image into its illumination and reflectance.
+
 # 3. Alignment of images
-We detect each hand's orientation and orient all images in the same direction
+We detect each hand's orientation and orient all images in the same direction using [Hough Transform](https://homepages.inf.ed.ac.uk/rbf/HIPR2/hough.htm) to detect the main lines in the image. Based on the orientation of the detected lines, we determine the orientation of the hand. W re-orient all images to a canonical vertical up orientation.
+
 ![aligned](https://github.com/Nader-Youhanna/Hand-Gesture-Recognition/assets/62957935/4a273fc2-8ece-461d-b826-6f071eb4476b)
 
 # 4. Edge Detection
